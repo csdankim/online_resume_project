@@ -22,7 +22,7 @@ var work = {
         "title": "Senior Manager, Overseas Sales(America)",
         "location": "Bundang-gu, Seongnam-city, Gyunggi-province, South Korea",
         "dates": "Jan. 2016 ~ Mar. 2016",
-        "url": "http://kaonmedia.com",
+        //  "url": "http://kaonmedia.com",
         "description": "North American Market Development: Go-To-Market Strategy Establishment & Execution" +
             "Sales Account for Latin American Major Customers(Claro, Millicom, Televisa, etc)" +
             "New Business Development"
@@ -31,7 +31,7 @@ var work = {
         "title": "Assistant Manager, Global Business Planning",
         "location": "Bundang-gu, Seongnam-city, Gyunggi-province, South Korea",
         "dates": "May. 2015 ~ Dec. 2015",
-        "url": "http://tmaxsoft.com",
+        // "url": "http://tmaxsoft.com",
         "description": "Global Business Planning : Goal 2020 Strategy Development" +
             "In charge of supporting Japan, China, India, and Austrailia subsidiaries" +
             "Co-Work with HP APJ & IBM APJ" +
@@ -41,7 +41,7 @@ var work = {
         "title": "Assistant Manager, Global Sales & Marketing",
         "location": "Cheonan-city, Chungnam-province, South Korea",
         "dates": "Feb. 2012 ~ Apr. 2015",
-        "url": "http://shillacorporation.com",
+        // "url": "http://shillacorporation.com",
         "description": "Global Sales & Marketing" +
             "In charge of Wind Energy Business(up to 50% of total revenue)" +
             "Sales accountant for Global Wind Turbine Manufacturer: GE(Currently No.1), Vestas, Goldwind, Gamesa, Siemens, Enercon, etc." +
@@ -56,7 +56,7 @@ var work = {
         "title": "Director Presidente",
         "location": "Tiete, Sao Paulo, Brasil",
         "dates": "May. 2013 ~ Dec. 2014",
-        "url": "http://shillacorporation.com",
+        // "url": "http://shillacorporation.com",
         "description": "Project Manager of SHILLA BRASIL Establishment" +
             "– Company Registration : Holding Company to Manufacturing Company" +
             "– The 1st President of SHILLA BRASIL" +
@@ -78,14 +78,14 @@ var work = {
         "title": "UX Designer",
         "location": "Seoul, South Korea",
         "dates": "Sep. 2010 ~ Dec. 2010",
-        "url": "http://vanillabreeze.com",
+        // "url": "http://vanillabreeze.com",
         "description": "Service Design & UX Design"
     }, {
         "employer": "Apple",
         "title": "Internship, Sales & Marketing",
         "location": "Seoul, South Korea",
         "dates": "Jul. 2008 ~ Dec. 2010",
-        "url": "http://apple.com",
+        // "url": "http://apple.com",
         "description": "Be trained basic MAC OS X so can practically use SW such as iLife, iWork, and Keynote as well" +
             "Looked over the whole distribution channels of Apple Korea and contributed to improve  the efficiency or characteristics of each channel" +
             "Have practical experiences and raised business manners through participating meetings for new promotion or the parties concerned" +
