@@ -1,3 +1,4 @@
+
 var bio = {
     "name": "Dongkyu Kim",
     "role": "Web developer & UX Designer",
@@ -6,121 +7,125 @@ var bio = {
         "email": "iuxdankim@gmail.com",
         "github": "iUXD",
         "twitter": "@iUXD",
+        // To do : blog URL link or button creation
         "blog": "http://iuxd.net",
         "location": "Seoul, South Korea"
     },
     "biopic": "images/dan.jpg",
-    "welcomeMsg": "Welcome to my online resume. Please read below and feel free to contact me and share your idea or anything you'd like to discuss. Thank you.",
+    "welcomeMessage": '<br>" Welcome to my online resume.' +
+        "<br>Please feel free to contact me and share your idea or anything you'd like to discuss." +
+        '<br>Thank you. "',
     "skills": ["HTML/CSS", "JavaScript", "UX Design", "Global Business Planning", "Creator"]
 };
 
-// I wantted to make "description" a list, but I failed to figure out how to do it. Please help.
+// <ul>, <li> is applied, but it does not show 'list-style-type: disc;'. 
+// I tried it on CSS, but it didn't work. I need to figure it out in near time.
 var work = {
     "jobs": [{
         "employer": "Kaon Media",
         "title": "Senior Manager, Overseas Sales(America)",
         "location": "Bundang-gu, Seongnam-city, Gyunggi-province, South Korea",
         "dates": "Jan. 2016 ~ Mar. 2016",
-        //  "url": "http://kaonmedia.com",
-        "description": "North American Market Development: Go-To-Market Strategy Establishment & Execution" +
-            "Sales Account for Latin American Major Customers(Claro, Millicom, Televisa, etc)" +
-            "New Business Development"
+        "url": "http://www.kaonmedia.com",
+        "description": '<ul><li class= "list">North American Market Development: Go-To-Market Strategy Establishment & Execution</li>' +
+            "<li>Sales Account for Latin American Major Customers(Claro, Millicom, Televisa, etc.)</li>" +
+            "<li>New Business Development</li></ul>"
     }, {
         "employer": "TmaxSoft",
         "title": "Assistant Manager, Global Business Planning",
         "location": "Bundang-gu, Seongnam-city, Gyunggi-province, South Korea",
         "dates": "May. 2015 ~ Dec. 2015",
-        // "url": "http://tmaxsoft.com",
-        "description": "Global Business Planning : Goal 2020 Strategy Development" +
-            "In charge of supporting Japan, China, India, and Austrailia subsidiaries" +
-            "Co-Work with HP APJ & IBM APJ" +
-            "In charge of Business Model Development & Global Business Planning for Government Project(KIAT) : Global Enterprise Software Marketplace"
+        "url": "http://www.tmaxsoft.com",
+        "description": "<ul><li>Global Business Planning : Goal 2020 Strategy Development</li>" +
+            "<li>In charge of supporting Japan, China, India, and Austrailia subsidiaries</li>" +
+            "<li>Co-Work with HP APJ & IBM APJ</li>" +
+            "<li>In charge of Business Model Development & Global Business Planning for Government Project(KIAT) : Global Enterprise Software Marketplace</li></ul>"
     }, {
         "employer": "Shilla Corporation",
-        "title": "Assistant Manager, Global Sales & Marketing",
+        "title": "Assistant Manager, Global Business",
         "location": "Cheonan-city, Chungnam-province, South Korea",
         "dates": "Feb. 2012 ~ Apr. 2015",
-        // "url": "http://shillacorporation.com",
-        "description": "Global Sales & Marketing" +
-            "In charge of Wind Energy Business(up to 50% of total revenue)" +
-            "Sales accountant for Global Wind Turbine Manufacturer: GE(Currently No.1), Vestas, Goldwind, Gamesa, Siemens, Enercon, etc." +
-            "Wind Power Market Analysis & New Business Planning." +
-            "Participated in Global Wind Exhibitions as an exhibitor." +
-            "Homepage management & PR" +
-            "Global Procurement" +
-            "Purchase an Italian Induction Hardening Machine: Contract review, Import Process, Custom Clearance, etc" +
-            "Raw Material Procurement for Slewing Bearings"
+        "url": "http://www.shillacorporation.com",
+        "description": "<p><b>Global Sales & Marketing</b></p><ul>" +
+            "<li>In charge of Wind Energy Business(up to 50% of total revenue)</li>" +
+            "<li>Sales accountant for Global Wind Turbine Manufacturer: GE(Currently No.1), Vestas, Goldwind, Gamesa, Siemens, Enercon, etc.</li>" +
+            "<li>Wind Power Market Analysis & New Business Planning</li>" +
+            "<li>Participated in Global Wind Exhibitions as an exhibitor</li>" +
+            "<li>Homepage management & PR</li></ul>" +
+            "<p><b>Global Procurement</b></p><ul>" +
+            "<li>Purchase an Italian Induction Hardening Machine: Contract review, Import Process, Custom Clearance, etc.</li>" +
+            "<li>Raw Material Procurement for Slewing Bearings</li></ul>"
     }, {
         "employer": "Shilla Brasil",
         "title": "Director Presidente",
         "location": "Tiete, Sao Paulo, Brasil",
         "dates": "May. 2013 ~ Dec. 2014",
-        // "url": "http://shillacorporation.com",
-        "description": "Project Manager of SHILLA BRASIL Establishment" +
-            "– Company Registration : Holding Company to Manufacturing Company" +
-            "– The 1st President of SHILLA BRASIL" +
-            "Searching Lands for Manufacturing Plant" +
-            "– Contact Investe Sao Paulo & INDI(Official Agency of Minas Gerais State), KOTRA, & Local Companies." +
-            "– Negotiation with Sao Paulo State & its major cities for land price" +
-            "Incentive Negotiation" +
-            "– Achieved Municipal Ordinance for Land price, Tax, and Infrastructure Support." +
-            "– Federal Gov.'s support for machinery import." +
-            "– Negotiation with BNDES(Brazil Development Bank) & Brazil Federal Gov. for investment cost & tax payment reduction." +
-            "Land Purchas" +
-            "– The land for the manufacturing plant was decided, but the land category was rural which does not allow foreign investors to use the land for business and, even, its ownership. Normally, the reclassification of the land takes 6 month, at least, but the reclassification process was completed in 45 days through the negotiation with Brazil Federal Government & Municipality of Tiete." +
-            "Plant Design Firm & Construction Company Selection" +
-            "Negotiation with Federal Organization in order to shorten the period for manufacturing license & construction consent." +
-            "Local Third Party Development & Negotiation for Raw Material Procurement Condition." +
-            "Sales Activity for Global Wind Turbine Manufactures in Brazil."
+        "url": "http://www.shillacorporation.com",
+        "description": "<p><b>Project Manager of SHILLA BRASIL Establishment</b></p><ul>" +
+            "<li>Company Registration : Holding Company to Manufacturing Company</li>" +
+            "<li>The 1st President of SHILLA BRASIL</li></ul>" +
+            "<p><b>Searching Lands for Manufacturing Plant</b></p><ul>" +
+            "<li>Contact Investe Sao Paulo & INDI(Official Agency of Minas Gerais State), KOTRA, & Local Companies</li>" +
+            "<li>Negotiation with Sao Paulo State & its major cities for land price</li></ul>" +
+            "<p><b>Incentive Negotiation</b></p><ul>" +
+            "<li>Achieved Municipal Ordinance for Land price, Tax, and Infrastructure Support</li>" +
+            "<li>Federal Gov.'s support for machinery import</li>" +
+            "<li>Negotiation with BNDES(Brazil Development Bank) & Brazil Federal Gov. for investment cost & tax payment reduction</li>" +
+            "<p><b>Land Purchas</b></p><ul>" +
+            "<li>The land for the manufacturing plant was decided, but the land category was rural which does not allow foreign investors to use the land for business and, even, its ownership. Normally, the reclassification of the land takes 6 month, at least, but the reclassification process was completed in 45 days through the negotiation with Brazil Federal Government & Municipality of Tiete.</li></ul>" +
+            "<p><b>Plant Design Firm & Construction Company Selection</b></p>" +
+            "<p><b>Negotiation with Federal Organization in order to shorten the period for manufacturing license & construction consent</b></p>" +
+            "<p><b>Local Third Party Development & Negotiation for Raw Material Procurement Condition</b></p>" +
+            "<p><b>Sales Activity for Global Wind Turbine Manufactures in Brazil</b></p>"
     }, {
         "employer": "Vanilla Breeze",
         "title": "UX Designer",
         "location": "Seoul, South Korea",
         "dates": "Sep. 2010 ~ Dec. 2010",
-        // "url": "http://vanillabreeze.com",
-        "description": "Service Design & UX Design"
+        "url": "http://www.vanillabreeze.com",
+        "description": "<p><b>Service Design & UX Design</b></p>"
     }, {
         "employer": "Apple",
         "title": "Internship, Sales & Marketing",
         "location": "Seoul, South Korea",
         "dates": "Jul. 2008 ~ Dec. 2010",
-        // "url": "http://apple.com",
-        "description": "Be trained basic MAC OS X so can practically use SW such as iLife, iWork, and Keynote as well" +
-            "Looked over the whole distribution channels of Apple Korea and contributed to improve  the efficiency or characteristics of each channel" +
-            "Have practical experiences and raised business manners through participating meetings for new promotion or the parties concerned" +
-            "Involved projects are 'Mac campus tour’ for increasing Mac Sales and a research, ‘DRM Free and Music Resource Market’" +
-            "Creative enough to make interesting UCC of iPod and suggest own solution for facing problems" +
-            "Sales, Marketing, PR"
+        "url": "http://www.apple.com",
+        "description": "<p><b>Sales, Marketing, PR</b></p><ul>" +
+            "<li>Be trained basic MAC OS X so can practically use SW such as iLife, iWork, and Keynote as well.</li>" +
+            "<li>Looked over the whole distribution channels of Apple Korea and contributed to improve  the efficiency or characteristics of each channel.</li>" +
+            "<li>Have practical experiences and raised business manners through participating meetings for new promotion or the parties concerned." +
+            "<li>Involved projects are 'Mac campus tour’ for increasing Mac Sales and a research, ‘DRM Free and Music Resource Market’." +
+            "<li>Creative enough to make interesting UCC of iPod and suggest own solution for facing problems.</li></ul>"
     }]
 };
 
 var education = {
     "schools": [{
-        "name": "Yonsei Univ. Graudate School of Inforamtion",
+        "name": "Yonsei University Graudate School of Inforamtion",
         "location": "Seoul, South Korea",
-        "degree": "Masters",
-        "major": ["Inforamtion Systems - Digital Contents & UX Design"],
-        "dates": "Feb. 2012",
+        "degree": "MA",
+        "majors": ["Inforamtion Systems - Digital Contents & UX Design"],
+        "date": "Feb. 2012",
         "thesis": ["Social Reading in Mobile e-Book - The Cognitive Characteristics of Social Interface and Usage Intention"],
         "url": "http://gsi.yonsei.ac.kr"
     }, {
         "name": "Yonsei University",
         "location": "Seoul, South Korea",
         "degree": "BA",
-        "major": ["Political Science & International Relations, Law(minor)"],
-        "dates": "Aug. 2008",
+        "majors": ["Political Science & International Relations, Law(minor)"],
+        "date": "Aug. 2008",
         "thesis": [],
-        "url": "http://yonsei.ac.kr"
+        "url": "http://www.yonsei.ac.kr"
     }],
     "onlineCourses": [{
         "title": "Front-end web developer",
         "school": "Udacity",
-        "dates": "2016",
+        "date": "2016",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
     }, {
         "title": "Intro to Programming",
         "school": "Udacity",
-        "dates": "2016",
+        "date": "2016",
         "url": "https://www.udacity.com/course/intro-to-programming-nanodegree--nd000"
     }]
 };
@@ -128,20 +133,21 @@ var education = {
 
 
 var projects = {
-    "project": [{
+    "projects": [{
         "title": "IPTV Platform Development for Seniors",
         "organization": "Yonsei University HCI Research Group for Human Centered Social Computing",
         "dates": "Mar. 2009 ~ May 2010",
         "description": "Study on elders' IPTV usage and its social function",
-        "image": ["images/project1.jpg", "images/project2.jpg"]
+        "images": ["images/project1.jpg", "images/project2.jpg"]
     }, {
         "title": "Samsung Smartphone Usability Innovation",
         "organization": "Yonsei University UX Lab",
         "dates": "Dec. 2009 ~ May 2010",
         "description": "Usability test for Samsung's Bada & Galaxy smartphones",
-        "image": ["images/project3.jpg", "images/project4.jpg"]
+        "images": ["images/project3.jpg", "images/project4.jpg"]
     }]
 };
+
 
 bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -157,144 +163,137 @@ bio.display = function() {
     var formattedblog = HTMLblog.replace("%data%", bio.contacts.blog);
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     $("#topContacts").append(formattedMobile, formattedEmail, formattedgithub, formattedtwitter, formattedblog, formattedLocation);
-    $("#footerContacts").append(formattedMobile, formattedEmail, formattedgithub, formattedtwitter, formattedblog);
+    $("#footerContacts").append(formattedMobile, formattedEmail, formattedgithub, formattedtwitter, formattedblog, formattedLocation);
 
 
     var formattedbioPic = HTMLbioPic.replace("%data%", bio.biopic);
-    var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
+    var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#header").append(formattedbioPic);
     $("#header").append(formattedwelcomeMsg);
 
-
-    if (bio.skills.length > 0) {
-        $("#header").append(HTMLskillsStart);
-
-        var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+    // if (bio.skills.length > 0) {
+    $("#header").append(HTMLskillsStart);
+    for (var i = 0; i < bio.skills.length; i++) {
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
         $("#skills").append(formattedSkill);
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-        $("#skills").append(formattedSkill);
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-        $("#skills").append(formattedSkill);
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-        $("#skills").append(formattedSkill);
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
-        $("#skills").append(formattedSkill);
+        // }	
     }
 };
 
 
-function displayWork() {
-    for (var job in work.jobs) {
+work.display = function() {
+    for (var i = 0; i < work.jobs.length; i++) {
         // create new div for work experience
-        if (work.jobs.length > 0) {
+        $("#workExperience").append(HTMLworkStart);
+        // concat employer and title
+        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
+        var formattedET = formattedEmployer + formattedTitle;
+        $(".work-entry:last").append(formattedET);
 
-            $("#workExperience").append(HTMLworkStart);
-            // concat employer and title
+        var formattedworkURL = HTMLworkURL.replace("%data%", work.jobs[i].url);
+        var formattedworkURLclick = HTMLworkURLclick.replace("%data%", work.jobs[i].url);
+        var formattedworkUC = formattedworkURL + formattedworkURLclick;
+        $(".work-entry:last").append(formattedworkUC);
 
-            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].emloyer);
-            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-            var formattedET = formattedEmployer + formattedTitle;
+        var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
+        $(".work-entry:last").append(formattedLocation);
 
-            $(".work-entry:last").append(formattedET);
+        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+        $(".work-entry:last").append(formattedDates);
 
-            var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-            $(".work-entry:last").append(formattedLocation);
-
-            var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-            $(".work-entry:last").append(formattedDates);
-
-            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-            $(".work-entry:last").append(formattedDescription);
-        }
+        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
+        $(".work-entry:last").append(formattedDescription);
     }
-}
+};
+
 
 
 projects.display = function() {
-    for (var project in projects.project) {
-        if (projects.project.length > 0) {
+    projects.projects.forEach(function(project) {
+        $("#projects").append(HTMLprojectStart);
 
-            $("#projects").append(HTMLprojectStart);
-
-            var formattedTitle = HTMLprojectTitle.replace("%data%", projects.project[project].title);
-            var formattedOrg = HTMLprojectOrg.replace("%data%", projects.project[project].organization);
-            // var formattedTO = formattedTitle + formattedOrg;
-            $(".project-entry:last").append(formattedTitle);
-            $(".project-entry:last").append(formattedOrg);
-            // $(".project-entry:last").append(formattedTO);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
+        var formattedOrg = HTMLprojectOrg.replace("%data%", project.organization);
+        var formattedTO = formattedTitle + formattedOrg;
+        // $(".project-entry:last").append(formattedTitle);
+        // $(".project-entry:last").append(formattedOrg);
+        $(".project-entry:last").append(formattedTO);
 
 
-            var formattedDates = HTMLprojectDates.replace("%data%", projects.project[project].dates);
-            $(".project-entry:last").append(formattedDates);
+        var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
+        $(".project-entry:last").append(formattedDates);
 
-            var formattedDescription = HTMLprojectDescription.replace("%data%", projects.project[project].description);
-            $(".project-entry:last").append(formattedDescription);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
+        $(".project-entry:last").append(formattedDescription);
 
-            for (var image in projects.project[project].image) {
-                if (projects.project[project].image.length > 0) {
-                    var formattedImage = HTMLprojectImage.replace("%data%", projects.project[project].image[image]);
-                    $(".project-entry:last").append(formattedImage);
-                }
-            }
-        }
-    }
-
+        project.images.forEach(function(image) {
+            var formattedImage = HTMLprojectImage.replace("%data%", image)
+            $(".project-entry:last").append(formattedImage);
+        });
+    });
 };
+
 
 education.display = function() {
-    for (var school in education.schools) {
-        if (education.schools.length > 0) {
-            $("#education").append(HTMLschoolStart);
+    education.schools.forEach(function(school) {
+        $("#education").append(HTMLschoolStart);
 
-            var formattedschoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-            var formattedschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-            // var formattedschoolND = formattedschoolName + formattedschoolDegree;
+        var formattedschoolName = HTMLschoolName.replace("%data%", school.name);
+        var formattedschoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
+        var formattedschoolND = formattedschoolName + formattedschoolDegree;
 
+        // $(".education-entry:last").append(formattedschoolName);
+        // $(".education-entry:last").append(formattedschoolDegree);
+        $(".education-entry:last").append(formattedschoolND);
 
-            var formattedschoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-            var formattedschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-            var formattedschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-            $(".education-entry:last").append(formattedschoolName);
-            $(".education-entry:last").append(formattedschoolDegree);
-            $(".education-entry:last").append(formattedschoolDates);
-            $(".education-entry:last").append(formattedschoolLocation);
-            $(".education-entry:last").append(formattedschoolMajor);
+        var formattedschoolURL = HTMLschoolURL.replace("%data%", school.url);
+        var formattedschoolURLclick = HTMLschoolURLclick.replace("%data%", school.url);
+        var formattedschoolUC = formattedschoolURL + formattedschoolURLclick
+        $(".education-entry:last").append(formattedschoolUC);
 
-            if (education.schools[school].thesis.length > 0) {
-                var formattedschoolThesis = HTMLschoolThesis.replace("%data%", education.schools[school].thesis);
-                $(".education-entry:last").append(formattedschoolThesis);
-            }
+        var formattedschoolDates = HTMLschoolDates.replace("%data%", school.date);
+        $(".education-entry:last").append(formattedschoolDates);
 
-            // var formattedschoolURL = education.schools[school].url;
-        }
-    }
+        var formattedschoolLocation = HTMLschoolLocation.replace("%data%", school.location);
+        $(".education-entry:last").append(formattedschoolLocation);
 
+        var formattedschoolMajor = HTMLschoolMajor.replace("%data%", school.majors);
 
+        $(".education-entry:last").append(formattedschoolMajor);
 
-    for (var onlinecourse in education.onlineCourses) {
-        if (education.onlineCourses.length > 0) {
-            $("#education").append(HTMLonlineClasses);
-            $("#education").append(HTMLschoolStart);
+        school.thesis.forEach(function(thesis) {
+            var formattedschoolThesis = HTMLschoolThesis.replace("%data%", thesis);
+            $(".education-entry:last").append(formattedschoolThesis);
+        });
+    });
 
-            var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlinecourse].title);
-            var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlinecourse].school);
-            var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlinecourse].dates);
-            // creating URL link
-            var formattedonlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[onlinecourse].url);
-            var formattedonlineURLclick = HTMLonlineURLclick.replace("%data%", education.onlineCourses[onlinecourse].url);
-            var formattedUC = formattedonlineURL + formattedonlineURLclick;
-            $(".education-entry:last").append(formattedonlineTitle);
-            $(".education-entry:last").append(formattedonlineSchool);
-            $(".education-entry:last").append(formattedonlineDates);
-            // $(".education-entry:last").append(formattedonlineURL);
-            // $(".education-entry:last").append(formattedonlineURLclick);
-            $(".education-entry:last").append(formattedUC);
-        }
-    }
+    $("#education").append(HTMLonlineClasses);
+    education.onlineCourses.forEach(function(onlinecourse) {
+        $("#education").append(HTMLschoolStart);
+
+        var formattedonlineTitle = HTMLonlineTitle.replace("%data%", onlinecourse.title);
+        var formattedonlineSchool = HTMLonlineSchool.replace("%data%", onlinecourse.school);
+        var formattedonlineTS = formattedonlineTitle + formattedonlineSchool;
+        // $(".education-entry:last").append(formattedonlineTitle);
+        // $(".education-entry:last").append(formattedonlineSchool);
+        $(".education-entry:last").append(formattedonlineTS);
+
+        var formattedonlineDates = HTMLonlineDates.replace("%data%", onlinecourse.date);
+        $(".education-entry:last").append(formattedonlineDates);
+
+        // creating URL link
+        var formattedonlineURL = HTMLonlineURL.replace("%data%", onlinecourse.url);
+        var formattedonlineURLclick = HTMLonlineURLclick.replace("%data%", onlinecourse.url);
+        var formattedUC = formattedonlineURL + formattedonlineURLclick;
+        // $(".education-entry:last").append(formattedonlineURL);
+        // $(".education-entry:last").append(formattedonlineURLclick);
+        $(".education-entry:last").append(formattedUC);
+    });
 };
 
 
-displayWork();
+work.display();
 bio.display();
 projects.display();
 education.display();
@@ -304,6 +303,7 @@ $("#mapDiv").append(googleMap);
 
 $("#main").append(internationalizeButton);
 
+
 function inName(name) {
     name = name.trim().split(" ");
     console.log(name);
@@ -311,16 +311,14 @@ function inName(name) {
     name[0] = name[0].slice(0, 1).toUpperCase() + name[0].slice(1).toLowerCase();
 
     return name.join(" ");
-}
-
-
+};
 
 
 // 1) Write a funcion called locationizer(work_obj). It must take in the work object.
 // 2) locationizer(work_obj) must return an array of the locations in work.
 // 3) You might find you need to use the array method .push() to add values to the array.
 
-/*
+
 function locationizer(work_obj) {
     var locationArray = [];
 
@@ -329,6 +327,41 @@ function locationizer(work_obj) {
         locationArray.push(newLocation);
     }
 
-    return locationArray
+    return locationArray;
 }
+
+
+/* for-in loop usage practice
+projects.display = function() {
+    for (var project in projects.projects) {
+        if (projects.projects.hasOwnProperty(project)) {
+        	console.log(projects.projects[project]);
+        }
+
+        $("#projects").append(HTMLprojectStart);
+
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+        var formattedOrg = HTMLprojectOrg.replace("%data%", projects.projects[project].organization);
+        var formattedTO = formattedTitle + formattedOrg;
+        // $(".project-entry:last").append(formattedTitle);
+        // $(".project-entry:last").append(formattedOrg);
+        $(".project-entry:last").append(formattedTO);
+
+
+        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+        $(".project-entry:last").append(formattedDates);
+
+        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+        $(".project-entry:last").append(formattedDescription);
+
+        
+		for (var image in projects.projects[project].images) {
+			if (projects.projects[project].images.hasOwnProperty(project)) {
+				console.log(projects.projects[project].images[image]);
+			}
+			var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+        	$(".project-entry:last").append(formattedImage);
+		}
+    }
+};
 */
