@@ -104,7 +104,7 @@ var education = {
         "location": "Seoul, South Korea",
         "degree": "MA",
         "majors": ["Inforamtion Systems - Digital Contents & UX Design"],
-        "date": "Feb. 2012",
+        "dates": "Mar. 2009 ~ Feb. 2012",
         "thesis": ["Social Reading in Mobile e-Book - The Cognitive Characteristics of Social Interface and Usage Intention"],
         "url": "http://gsi.yonsei.ac.kr"
     }, {
@@ -112,14 +112,14 @@ var education = {
         "location": "Seoul, South Korea",
         "degree": "BA",
         "majors": ["Political Science & International Relations, Law(minor)"],
-        "date": "Aug. 2008",
+        "dates": "Mar. 2000 ~ Aug. 2008 (including 2 year military service)",
         "thesis": [],
         "url": "http://www.yonsei.ac.kr"
     }],
     "onlineCourses": [{
         "title": "Front-end web developer",
         "school": "Udacity",
-        "date": "2016",
+        "date": "2016 - in progress",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
     }, {
         "title": "Intro to Programming",
@@ -170,12 +170,10 @@ bio.display = function() {
     $("#header").append(formattedbioPic);
     $("#header").append(formattedwelcomeMsg);
 
-    // if (bio.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
     for (var i = 0; i < bio.skills.length; i++) {
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
         $("#skills").append(formattedSkill);
-        // }	
     }
 };
 
@@ -215,8 +213,6 @@ projects.display = function() {
         var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
         var formattedOrg = HTMLprojectOrg.replace("%data%", project.organization);
         var formattedTO = formattedTitle + formattedOrg;
-        // $(".project-entry:last").append(formattedTitle);
-        // $(".project-entry:last").append(formattedOrg);
         $(".project-entry:last").append(formattedTO);
 
 
@@ -241,9 +237,6 @@ education.display = function() {
         var formattedschoolName = HTMLschoolName.replace("%data%", school.name);
         var formattedschoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
         var formattedschoolND = formattedschoolName + formattedschoolDegree;
-
-        // $(".education-entry:last").append(formattedschoolName);
-        // $(".education-entry:last").append(formattedschoolDegree);
         $(".education-entry:last").append(formattedschoolND);
 
         var formattedschoolURL = HTMLschoolURL.replace("%data%", school.url);
@@ -274,8 +267,6 @@ education.display = function() {
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", onlinecourse.title);
         var formattedonlineSchool = HTMLonlineSchool.replace("%data%", onlinecourse.school);
         var formattedonlineTS = formattedonlineTitle + formattedonlineSchool;
-        // $(".education-entry:last").append(formattedonlineTitle);
-        // $(".education-entry:last").append(formattedonlineSchool);
         $(".education-entry:last").append(formattedonlineTS);
 
         var formattedonlineDates = HTMLonlineDates.replace("%data%", onlinecourse.date);
@@ -285,8 +276,6 @@ education.display = function() {
         var formattedonlineURL = HTMLonlineURL.replace("%data%", onlinecourse.url);
         var formattedonlineURLclick = HTMLonlineURLclick.replace("%data%", onlinecourse.url);
         var formattedUC = formattedonlineURL + formattedonlineURLclick;
-        // $(".education-entry:last").append(formattedonlineURL);
-        // $(".education-entry:last").append(formattedonlineURLclick);
         $(".education-entry:last").append(formattedUC);
     });
 };
@@ -302,7 +291,6 @@ $("#mapDiv").append(googleMap);
 
 $("#main").append(internationalizeButton);
 
-
 function inName(name) {
     name = name.trim().split(" ");
     console.log(name);
@@ -312,55 +300,3 @@ function inName(name) {
     return name.join(" ");
 };
 
-
-// 1) Write a funcion called locationizer(work_obj). It must take in the work object.
-// 2) locationizer(work_obj) must return an array of the locations in work.
-// 3) You might find you need to use the array method .push() to add values to the array.
-
-
-function locationizer(work_obj) {
-    var locationArray = [];
-
-    for (job in work.jobs) {
-        var newLocation = work_obj.jobs[job].location;
-        locationArray.push(newLocation);
-    }
-
-    return locationArray;
-}
-
-
-/* for-in loop usage practice
-projects.display = function() {
-    for (var project in projects.projects) {
-        if (projects.projects.hasOwnProperty(project)) {
-        	console.log(projects.projects[project]);
-        }
-
-        $("#projects").append(HTMLprojectStart);
-
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-        var formattedOrg = HTMLprojectOrg.replace("%data%", projects.projects[project].organization);
-        var formattedTO = formattedTitle + formattedOrg;
-        // $(".project-entry:last").append(formattedTitle);
-        // $(".project-entry:last").append(formattedOrg);
-        $(".project-entry:last").append(formattedTO);
-
-
-        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-        $(".project-entry:last").append(formattedDates);
-
-        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-        $(".project-entry:last").append(formattedDescription);
-
-        
-		for (var image in projects.projects[project].images) {
-			if (projects.projects[project].images.hasOwnProperty(project)) {
-				console.log(projects.projects[project].images[image]);
-			}
-			var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-        	$(".project-entry:last").append(formattedImage);
-		}
-    }
-};
-*/
